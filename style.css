@@ -1,37 +1,40 @@
  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
         
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #0f172a;
-            color: #e2e8f0;
-        }
-        
-        h1, h2, h3, h4 {
-            font-family: 'Playfair Display', serif;
-        }
-        
-        .gradient-text {
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            background-image: linear-gradient(90deg, #8b5cf6, #f59e0b);
-        }
-        
-        .astro-pattern {
-            background-image: radial-gradient(circle, rgba(139, 92, 246, 0.1) 1px, transparent 1px);
-            background-size: 20px 20px;
-        }
-        
-        .star-bg {
-            background-image: url('http://static.photos/space/1200x630/42');
-            background-size: cover;
-            background-position: center;
-        }
-        
-        /* Fix for button icon spacing */
-        .btn-icon-text {
-            display: inline-flex;
-            align-items: center;
-            white-space: nowrap;
-        }
-        
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+.gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, #8b5cf6, #f59e0b);
+}
+
+.astro-pattern {
+    background-image: radial-gradient(circle, rgba(139, 92, 246, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.star-bg {
+    background-image: url('http://static.photos/space/1200x630/42');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Fix for button icon spacing */
+.btn-icon-text {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.border-custom-violet {
+    border-color: #8b5cf6;
+}
