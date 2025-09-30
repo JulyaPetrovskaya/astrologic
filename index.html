@@ -10,457 +10,461 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="astro-pattern">
-    <!-- Navigation -->
-    <nav class="bg-gray-900 bg-opacity-80 backdrop-blur-md fixed w-full z-50 border-b border-violet-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16 w-full">
-                <div class="flex-shrink-0">
-                    <span class="text-2xl font-bold gradient-text">Ольга Джуманова</span>
-                </div>
-                <div class="hidden md:flex flex-1 justify-center">
-                    <div class="flex items-center space-x-8">
-                        <a href="#" class="text-violet-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Головна</a>
-                        <a href="#services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Послуги</a>
-                        <a href="#articles" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Статті</a>
-                        <a href="#testimonials" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Відгуки</a>
-                        <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Контакти</a>
-                        <a href="#pricing" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Тарифи</a>
-                        <a href="https://www.instagram.com/olgadzhumandzhi/" target="_blank" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                            <i data-feather="instagram" class="w-4 h-4 mr-1"></i>
-                        </a>
-                        <a href="https://www.facebook.com/ol.ga.konovalova.795283" target="_blank" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex items-center">
-                            <i data-feather="facebook" class="w-4 h-4 mr-1"></i>
-                        </a>
-</div>
-                </div>
-                <div>
-                    <button onclick="showConsultationForm()" class="hidden md:block bg-gradient-to-r from-violet-600 to-amber-600 hover:from-violet-700 hover:to-amber-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center shadow-lg hover:shadow-violet-700/50 transition-all">
-                      Записатись
-                    </button>
-<button type="button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
-                        <span class="sr-only">Open main menu</span>
-                        <i data-feather="menu" class="block h-6 w-6"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobile menu -->
-        <div class="md:hidden hidden" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="#" class="text-violet-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Головна</a>
-                <a href="#services" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Послуги</a>
-                <a href="#articles" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Статті</a>
-                <a href="#testimonials" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Відгуки</a>
-                        <a href="#contact" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Контакти</a>
-                        <a href="#pricing" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Тарифи</a>
-                <button onclick="showConsultationForm()" class="bg-gradient-to-r from-violet-600 to-amber-600 hover:from-violet-700 hover:to-amber-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center shadow-lg hover:shadow-violet-700/50 transition-all">
-                    <i data-feather="calendar" class="mr-2 w-5 h-5"></i> Записатись
-                </button>
+  <body class="astro-pattern">
+      <!-- Navigation -->
+      <nav class="bg-gray-900 bg-opacity-80 backdrop-blur-md fixed w-full z-50 border-b border-violet-900">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="flex items-center justify-between h-16 w-full">
+                  <div class="flex-shrink-0">
+                      <span class="text-2xl font-bold gradient-text">Ольга Джуманова</span>
+                  </div>
+                  <div class="hidden md:flex flex-1 justify-center">
+                      <div class="flex items-center space-x-8">
+                          <a href="#" class="text-violet-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Головна</a>
+                          <a href="#services" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Послуги</a>
+                          <a href="#articles" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Статті</a>
+                          <a href="#testimonials" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Відгуки</a>
+                          <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Контакти</a>
+                          <a href="#pricing" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Тарифи</a>
+                          <a href="https://www.instagram.com/olgadzhumandzhi/" target="_blank" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                              <i data-feather="instagram" class="w-4 h-4 mr-1"></i>
+                          </a>
+                          <a href="https://www.facebook.com/ol.ga.konovalova.795283" target="_blank" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium flex items-center">
+                              <i data-feather="facebook" class="w-4 h-4 mr-1"></i>
+                          </a>
+  </div>
+                  </div>
+                  <div>
+                      <button onclick="showConsultationForm()" class="hidden md:block bg-gradient-to-r from-violet-600 to-amber-600 hover:from-violet-700 hover:to-amber-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center shadow-lg hover:shadow-violet-700/50 transition-all">
+                        Записатись
+                      </button>
+  <button type="button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
+                          <span class="sr-only">Open main menu</span>
+                          <i data-feather="menu" class="block h-6 w-6"></i>
+                      </button>
+                  </div>
               </div>
-        </div>
-    </nav>
+          </div>
 
-    <!-- Rest of your existing HTML content remains exactly the same -->
-    <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="flex flex-col lg:flex-row items-center gap-12">
-            <div class="lg:w-1/2 text-center lg:text-left">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">
-                    <span class="gradient-text">Астрологічні</span> консультації
-                </h1>
-                <p class="text-lg md:text-xl text-gray-300 max-w-3xl">
-                    Відкрийте таємниці вашого життя через натальну карту, синастрію та хорарну астрологію. Досліджуйте свої можливості та виклики з професійним астрологом.
-                </p>
-                <div class="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-                    <a href="#services" class="bg-violet-600 hover:bg-violet-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center">
-                        <i data-feather="star" class="mr-2 w-5 h-5"></i> Мої послуги
-                    </a>
-                    <button onclick="showConsultationForm()" class="bg-gradient-to-r from-violet-600 to-amber-600 hover:from-violet-700 hover:to-amber-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center shadow-lg hover:shadow-violet-700/50 transition-all">
-                        <i data-feather="calendar" class="mr-2 w-5 h-5"></i> Записатись
-                    </button>
+          <!-- Mobile menu -->
+          <div class="md:hidden hidden" id="mobile-menu">
+              <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                  <a href="#" class="text-violet-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Головна</a>
+                  <a href="#services" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Послуги</a>
+                  <a href="#articles" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Статті</a>
+                  <a href="#testimonials" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Відгуки</a>
+                          <a href="#contact" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Контакти</a>
+                          <a href="#pricing" class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Тарифи</a>
+                  <button onclick="showConsultationForm()" class="bg-gradient-to-r from-violet-600 to-amber-600 hover:from-violet-700 hover:to-amber-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center shadow-lg hover:shadow-violet-700/50 transition-all">
+                      <i data-feather="calendar" class="mr-2 w-5 h-5"></i> Записатись
+                  </button>
                 </div>
-            </div>
-            <div class="lg:w-1/2 flex justify-center">
-                <img src="https://huggingface.co/spaces/petrovskajulya/stellar-whisperer-s-cosmic-insights/resolve/main/images/мама.jpg" alt="Ольга Джуманова" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-violet-500 shadow-lg">
-            </div>
-        </div>
-    </section>
-<!-- Services Section -->
-    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Астрологічні послуги</h2>
-            <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
-        </div>
+          </div>
+      </nav>
 
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Natal Chart -->
-            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-violet-500 transition-all">
-                <div class="bg-violet-900 bg-opacity-30 w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                    <i data-feather="compass" class="w-8 h-8 text-violet-400"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Натальна карта</h3>
-                <p class="text-gray-300 mb-4">Детальний аналіз вашої натальної карти, який розкриває ваш унікальний потенціал, кармічні завдання та шляхи розвитку.</p>
-                <a href="#" class="text-amber-400 hover:text-amber-300 font-medium flex items-center">
-                    Детальніше <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                </a>
-            </div>
+      <!-- Rest of your existing HTML content remains exactly the same -->
+      <!-- Hero Section -->
+      <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div class="flex flex-col lg:flex-row items-center gap-12">
+              <div class="lg:w-1/2 text-center lg:text-left">
+                  <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                      <span class="gradient-text">Астрологічні</span> консультації
+                  </h1>
+                  <p class="text-lg md:text-xl text-gray-300 max-w-3xl">
+                      Відкрийте таємниці вашого життя через натальну карту, синастрію та хорарну астрологію. Досліджуйте свої можливості та виклики з професійним астрологом.
+                  </p>
+                  <div class="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                      <a href="#services" class="bg-violet-600 hover:bg-violet-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center">
+                          <i data-feather="star" class="mr-2 w-5 h-5"></i> Мої послуги
+                      </a>
+                      <button onclick="showConsultationForm()" class="bg-gradient-to-r from-violet-600 to-amber-600 hover:from-violet-700 hover:to-amber-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center shadow-lg hover:shadow-violet-700/50 transition-all">
+                          <i data-feather="calendar" class="mr-2 w-5 h-5"></i> Записатись
+                      </button>
+                  </div>
+              </div>
+              <div class="lg:w-1/2 flex justify-center">
+                  <img 
+                    src="https://huggingface.co/spaces/petrovskajulya/stellar-whisperer-s-cosmic-insights/resolve/main/images/мама.jpg" 
+                    alt="Ольга Джуманова"
+                    class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-violet-500 shadow-lg"
+                  >
+              </div>
+          </div>
+      </section>
+  <!-- Services Section -->
+      <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">Астрологічні послуги</h2>
+              <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
+          </div>
 
-            <!-- Synastry -->
-            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-violet-500 transition-all">
-                <div class="bg-violet-900 bg-opacity-30 w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                    <i data-feather="heart" class="w-8 h-8 text-violet-400"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Синастрія</h3>
-                <p class="text-gray-300 mb-4">Аналіз взаємодії двох натальних карт для розуміння динаміки стосунків у парі, з родиною чи бізнес-партнерами.</p>
-                <a href="#" class="text-amber-400 hover:text-amber-300 font-medium flex items-center">
-                    Детальніше <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                </a>
-            </div>
+          <div class="grid md:grid-cols-3 gap-8">
+              <!-- Natal Chart -->
+              <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-violet-500 transition-all">
+                  <div class="bg-violet-900 bg-opacity-30 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                      <i data-feather="compass" class="w-8 h-8 text-violet-400"></i>
+                  </div>
+                  <h3 class="text-xl font-bold mb-3">Натальна карта</h3>
+                  <p class="text-gray-300 mb-4">Детальний аналіз вашої натальної карти, який розкриває ваш унікальний потенціал, кармічні завдання та шляхи розвитку.</p>
+                  <a href="#" class="text-amber-400 hover:text-amber-300 font-medium flex items-center">
+                      Детальніше <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                  </a>
+              </div>
 
-            <!-- Horary -->
-            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-violet-500 transition-all">
-                <div class="bg-violet-900 bg-opacity-30 w-16 h-16 rounded-full flex items-center justify-center mb-4">
-                    <i data-feather="clock" class="w-8 h-8 text-violet-400"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Хорарна астрологія</h3>
-                <p class="text-gray-300 mb-4">Відповіді на конкретні питання через аналіз карти, створеної на момент постановки запитання.</p>
-                <a href="#" class="text-amber-400 hover:text-amber-300 font-medium flex items-center">
-                    Детальніше <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                </a>
-            </div>
-        </div>
-    </section>
+              <!-- Synastry -->
+              <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-violet-500 transition-all">
+                  <div class="bg-violet-900 bg-opacity-30 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                      <i data-feather="heart" class="w-8 h-8 text-violet-400"></i>
+                  </div>
+                  <h3 class="text-xl font-bold mb-3">Синастрія</h3>
+                  <p class="text-gray-300 mb-4">Аналіз взаємодії двох натальних карт для розуміння динаміки стосунків у парі, з родиною чи бізнес-партнерами.</p>
+                  <a href="#" class="text-amber-400 hover:text-amber-300 font-medium flex items-center">
+                      Детальніше <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                  </a>
+              </div>
 
-    <!-- Articles Section -->
-    <section id="articles" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-gray-800 bg-opacity-50 rounded-xl">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Останні статті</h2>
-            <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
-        </div>
+              <!-- Horary -->
+              <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-violet-500 transition-all">
+                  <div class="bg-violet-900 bg-opacity-30 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                      <i data-feather="clock" class="w-8 h-8 text-violet-400"></i>
+                  </div>
+                  <h3 class="text-xl font-bold mb-3">Хорарна астрологія</h3>
+                  <p class="text-gray-300 mb-4">Відповіді на конкретні питання через аналіз карти, створеної на момент постановки запитання.</p>
+                  <a href="#" class="text-amber-400 hover:text-amber-300 font-medium flex items-center">
+                      Детальніше <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                  </a>
+              </div>
+          </div>
+      </section>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Article 1 -->
-            <article class="bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-violet-900/20 transition-all">
-                <div class="h-48 rounded-lg flex items-center justify-center relative overflow-hidden" 
-                    style="background-image: url('mars.png'); background-size: cover; background-position: center;">
-                <div class="absolute inset-0 bg-gradient-to-r from-amber-900 to-violet-800 opacity-10"></div>
-                <!-- <i data-feather="moon" class="w-16 h-16 text-white"></i> -->
-                </div>
-                <div class="p-6">
-                    <span class="text-sm text-amber-400">Натальна карта</span>
-                    <h3 class="text-xl font-bold mt-2 mb-3">Як Меркурій впливає на ваше спілкування</h3>
-                    <p class="text-gray-300 mb-4">Досліджуємо, як положення Меркурія у вашій натальній карті формує ваш стиль спілкування та мислення.</p>
-                     <a href="article-mercuriy.html" class="text-violet-400 hover:text-violet-300 font-medium flex items-center">
-                        Читати далі 
-                      <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                    </a>
-                </div>
-            </article>
+      <!-- Articles Section -->
+      <section id="articles" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto bg-gray-800 bg-opacity-50 rounded-xl">
+          <div class="text-center mb-16">
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">Останні статті</h2>
+              <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
+          </div>
 
-            <!-- Article 2 -->
-            <article class="bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-violet-900/20 transition-all">
-                <div class="h-48 rounded-lg flex items-center justify-center relative overflow-hidden" 
-                    style="background-image: url('venus.png'); background-size: cover; background-position: center;">
-                    <div class="absolute inset-0 bg-gradient-to-r from-amber-900 to-violet-800 opacity-10"></div> <i data-feather="heart" class="w-16 h-16 text-white relative z-10"></i> 
-                </div>
-                <div class="p-6">
-                    <span class="text-sm text-amber-400">Синастрія</span>
-                    <h3 class="text-xl font-bold mt-2 mb-3">Аспекти Венери у стосунках</h3>
-                    <p class="text-gray-300 mb-4">Як положення Венери у синастрії впливає на романтичну складову ваших стосунків.</p>
-                    <a href="article-venus.html" class="text-violet-400 hover:text-violet-300 font-medium flex items-center">
-                        Читати далі <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                    </a>
-                </div>
-            </article>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Article 1 -->
+              <article class="bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-violet-900/20 transition-all">
+                  <div class="h-48 rounded-lg flex items-center justify-center relative overflow-hidden" 
+                      style="background-image: url('mars.png'); background-size: cover; background-position: center;">
+                  <div class="absolute inset-0 bg-gradient-to-r from-amber-900 to-violet-800 opacity-10"></div>
+                  <!-- <i data-feather="moon" class="w-16 h-16 text-white"></i> -->
+                  </div>
+                  <div class="p-6">
+                      <span class="text-sm text-amber-400">Натальна карта</span>
+                      <h3 class="text-xl font-bold mt-2 mb-3">Як Меркурій впливає на ваше спілкування</h3>
+                      <p class="text-gray-300 mb-4">Досліджуємо, як положення Меркурія у вашій натальній карті формує ваш стиль спілкування та мислення.</p>
+                      <a href="article-mercuriy.html" class="text-violet-400 hover:text-violet-300 font-medium flex items-center">
+                          Читати далі 
+                        <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                      </a>
+                  </div>
+              </article>
 
-            <!-- Article 3 -->
-            <article class="bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-violet-900/20 transition-all">
-                <div class="h-48 bg-gradient-to-r from-violet-800 to-amber-900 flex items-center justify-center">
-                    <i data-feather="clock" class="w-16 h-16 text-white"></i>
-                </div>
-                <div class="p-6">
-                    <span class="text-sm text-amber-400">Хорарна астрологія</span>
-                    <h3 class="text-xl font-bold mt-2 mb-3">Мистецтво правильно ставити питання</h3>
-                    <p class="text-gray-300 mb-4">Поради щодо формулювання питань для отримання найточніших відповідей у хорарній астрології.</p>
-                    <a href="#" class="text-violet-400 hover:text-violet-300 font-medium flex items-center">
-                        Читати далі <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
-                    </a>
-                </div>
-            </article>
-        </div>
+              <!-- Article 2 -->
+              <article class="bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-violet-900/20 transition-all">
+                  <div class="h-48 rounded-lg flex items-center justify-center relative overflow-hidden" 
+                      style="background-image: url('venus.png'); background-size: cover; background-position: center;">
+                      <div class="absolute inset-0 bg-gradient-to-r from-amber-900 to-violet-800 opacity-10"></div> <i data-feather="heart" class="w-16 h-16 text-white relative z-10"></i> 
+                  </div>
+                  <div class="p-6">
+                      <span class="text-sm text-amber-400">Синастрія</span>
+                      <h3 class="text-xl font-bold mt-2 mb-3">Аспекти Венери у стосунках</h3>
+                      <p class="text-gray-300 mb-4">Як положення Венери у синастрії впливає на романтичну складову ваших стосунків.</p>
+                      <a href="article-venus.html" class="text-violet-400 hover:text-violet-300 font-medium flex items-center">
+                          Читати далі <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                      </a>
+                  </div>
+              </article>
 
-        <div class="text-center mt-12">
-            <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-violet-600 hover:bg-violet-700">
-                Всі статті <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
-            </a>
-        </div>
-    </section>
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Тарифні плани</h2>
-            <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
-        </div>
+              <!-- Article 3 -->
+              <article class="bg-gray-900 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-violet-900/20 transition-all">
+                  <div class="h-48 bg-gradient-to-r from-violet-800 to-amber-900 flex items-center justify-center">
+                      <i data-feather="clock" class="w-16 h-16 text-white"></i>
+                  </div>
+                  <div class="p-6">
+                      <span class="text-sm text-amber-400">Хорарна астрологія</span>
+                      <h3 class="text-xl font-bold mt-2 mb-3">Мистецтво правильно ставити питання</h3>
+                      <p class="text-gray-300 mb-4">Поради щодо формулювання питань для отримання найточніших відповідей у хорарній астрології.</p>
+                      <a href="#" class="text-violet-400 hover:text-violet-300 font-medium flex items-center">
+                          Читати далі <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                      </a>
+                  </div>
+              </article>
+          </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Basic Plan -->
-            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-violet-500 transition-all">
-                <div class="text-center mb-6">
-                    <h3 class="text-xl font-bold mb-2">Базовий</h3>
-                    <p class="text-amber-400 text-2xl font-bold">$9</p>
-                    <p class="text-gray-400 italic">«Таланти»</p>
-                </div>
-                <ul class="space-y-3 mb-6">
-                    <li class="flex items-center text-green-400">
-                        <i data-feather="check" class="mr-2 w-4 h-4"></i>
-                        Визначення підходящої професії (короткий аналіз)
-                    </li>
-                    <li class="flex items-center text-red-400">
-                        <i data-feather="x" class="mr-2 w-4 h-4"></i>
-                        Без консультацій (тільки письмовий звіт)
-                    </li>
-                </ul>
-                <button class="w-full bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-lg font-medium">
-                    Обрати тариф
-                </button>
-            </div>
+          <div class="text-center mt-12">
+              <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-violet-600 hover:bg-violet-700">
+                  Всі статті <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+              </a>
+          </div>
+      </section>
+      <!-- Pricing Section -->
+      <section id="pricing" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">Тарифні плани</h2>
+              <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
+          </div>
 
-            <!-- Standard Plan -->
-            <div class="bg-gray-800 rounded-xl p-6 border-2 border-amber-500 transform hover:scale-105 transition-all relative">
-                <div class="absolute top-0 right-0 bg-amber-500 text-gray-900 px-3 py-1 text-xs font-bold rounded-bl-lg">
-                    Популярний
-                </div>
-                <div class="text-center mb-6">
-                    <h3 class="text-xl font-bold mb-2">Стандарт</h3>
-                    <p class="text-amber-400 text-2xl font-bold">$29</p>
-                    <p class="text-gray-400 italic">«Кар’єра»</p>
-                </div>
-                <ul class="space-y-3 mb-6">
-                    <li class="flex items-center text-green-400">
-                        <i data-feather="check" class="mr-2 w-4 h-4"></i>
-                        Визначення підходящої професії
-                    </li>
-                    <li class="flex items-center text-green-400">
-                        <i data-feather="check" class="mr-2 w-4 h-4"></i>
-                        Консультація 1 година (онлайн)
-                    </li>
-                    <li class="flex items-center text-green-400">
-                        <i data-feather="check" class="mr-2 w-4 h-4"></i>
-                        Практичні поради для розвитку кар’єри
-                    </li>
-                </ul>
-                <button class="w-full bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-lg font-medium">
-                    Обрати тариф
-                </button>
-            </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <!-- Basic Plan -->
+              <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-violet-500 transition-all">
+                  <div class="text-center mb-6">
+                      <h3 class="text-xl font-bold mb-2">Базовий</h3>
+                      <p class="text-amber-400 text-2xl font-bold">$9</p>
+                      <p class="text-gray-400 italic">«Таланти»</p>
+                  </div>
+                  <ul class="space-y-3 mb-6">
+                      <li class="flex items-center text-green-400">
+                          <i data-feather="check" class="mr-2 w-4 h-4"></i>
+                          Визначення підходящої професії (короткий аналіз)
+                      </li>
+                      <li class="flex items-center text-red-400">
+                          <i data-feather="x" class="mr-2 w-4 h-4"></i>
+                          Без консультацій (тільки письмовий звіт)
+                      </li>
+                  </ul>
+                  <button class="w-full bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-lg font-medium">
+                      Обрати тариф
+                  </button>
+              </div>
 
-            <!-- Horoscope Plan -->
-            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-violet-500 transition-all">
-                <div class="text-center mb-6">
-                    <h3 class="text-xl font-bold mb-2">Гороскоп</h3>
-                    <p class="text-amber-400 text-2xl font-bold">$49</p>
-                    <p class="text-gray-400 italic">«Рік попереду»</p>
-                </div>
-                <ul class="space-y-3 mb-6">
-                    <li class="flex items-center text-green-400">
-                        <i data-feather="check" class="mr-2 w-4 h-4"></i>
-                        Персональний гороскоп на 1 рік
-                    </li>
-                    <li class="flex items-center text-green-400">
-                        <i data-feather="check" class="mr-2 w-4 h-4"></i>
-                        Прогноз по фінансах, стосунках, здоров’ю
-                    </li>
-                    <li class="flex items-center text-green-400">
-                        <i data-feather="check" class="mr-2 w-4 h-4"></i>
-                        PDF з письмовими рекомендаціями
-                    </li>
-                </ul>
-                <button class="w-full bg-violet-600 hover:bg-violet-700 text-white py-2 px-4 rounded-lg font-medium">
-                    Обрати тариф
-                </button>
-            </div>
+              <!-- Standard Plan -->
+              <div class="bg-gray-800 rounded-xl p-6 border-2 border-amber-500 transform hover:scale-105 transition-all relative">
+                  <div class="absolute top-0 right-0 bg-amber-500 text-gray-900 px-3 py-1 text-xs font-bold rounded-bl-lg">
+                      Популярний
+                  </div>
+                  <div class="text-center mb-6">
+                      <h3 class="text-xl font-bold mb-2">Стандарт</h3>
+                      <p class="text-amber-400 text-2xl font-bold">$29</p>
+                      <p class="text-gray-400 italic">«Кар’єра»</p>
+                  </div>
+                  <ul class="space-y-3 mb-6">
+                      <li class="flex items-center text-green-400">
+                          <i data-feather="check" class="mr-2 w-4 h-4"></i>
+                          Визначення підходящої професії
+                      </li>
+                      <li class="flex items-center text-green-400">
+                          <i data-feather="check" class="mr-2 w-4 h-4"></i>
+                          Консультація 1 година (онлайн)
+                      </li>
+                      <li class="flex items-center text-green-400">
+                          <i data-feather="check" class="mr-2 w-4 h-4"></i>
+                          Практичні поради для розвитку кар’єри
+                      </li>
+                  </ul>
+                  <button class="w-full bg-amber-600 hover:bg-amber-700 text-white py-2 px-4 rounded-lg font-medium">
+                      Обрати тариф
+                  </button>
+              </div>
 
-            <!-- Premium Plan -->
-            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-violet-500 transition-all">
-                <div class="text-center mb-6">
-                    <h3 class="text-xl font-bold mb-2">Преміум</h3>
-                    <p class="text-amber-400 text-2xl font-bold">$99</p>
-                    <p class="text-gray-400 italic">«Глибинний розбір»</p>
-                </div>
-                <ul class="space-y-3 mb-6">
-                    <li class="flex items-center text-green-400">
-                        <i data-feather="check" class="mr-2 w-4 h-4"></i>
-                        Повний натальний/кар’єрний розбір
-                    </li>
-                    <li class="flex items-center text-green-400">
-                        <i data-feather="check" class="mr-2 w-4 h-4"></i>
-                        2 консультації на місяць по 1 годині
-                    </li>
-                    <li class="flex items-center text-green-400">
-                        <i data-feather="check" class="mr-2 w-4 h-4"></i>
-                        Індивідуальний план розвитку + матеріали
-                    </li>
-                </ul>
-                <button class="w-full bg-gradient-to-r from-violet-600 to-amber-600 hover:from-violet-700 hover:to-amber-700 text-white py-2 px-4 rounded-lg font-medium">
-                    Обрати тариф
-                </button>
-            </div>
-        </div>
-    </section>
+              <!-- Horoscope Plan -->
+              <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-violet-500 transition-all">
+                  <div class="text-center mb-6">
+                      <h3 class="text-xl font-bold mb-2">Гороскоп</h3>
+                      <p class="text-amber-400 text-2xl font-bold">$49</p>
+                      <p class="text-gray-400 italic">«Рік попереду»</p>
+                  </div>
+                  <ul class="space-y-3 mb-6">
+                      <li class="flex items-center text-green-400">
+                          <i data-feather="check" class="mr-2 w-4 h-4"></i>
+                          Персональний гороскоп на 1 рік
+                      </li>
+                      <li class="flex items-center text-green-400">
+                          <i data-feather="check" class="mr-2 w-4 h-4"></i>
+                          Прогноз по фінансах, стосунках, здоров’ю
+                      </li>
+                      <li class="flex items-center text-green-400">
+                          <i data-feather="check" class="mr-2 w-4 h-4"></i>
+                          PDF з письмовими рекомендаціями
+                      </li>
+                  </ul>
+                  <button class="w-full bg-violet-600 hover:bg-violet-700 text-white py-2 px-4 rounded-lg font-medium">
+                      Обрати тариф
+                  </button>
+              </div>
 
-    <!-- Testimonials Section -->
-<section id="testimonials" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Відгуки клієнтів</h2>
-            <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
-        </div>
+              <!-- Premium Plan -->
+              <div class="bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-violet-500 transition-all">
+                  <div class="text-center mb-6">
+                      <h3 class="text-xl font-bold mb-2">Преміум</h3>
+                      <p class="text-amber-400 text-2xl font-bold">$99</p>
+                      <p class="text-gray-400 italic">«Глибинний розбір»</p>
+                  </div>
+                  <ul class="space-y-3 mb-6">
+                      <li class="flex items-center text-green-400">
+                          <i data-feather="check" class="mr-2 w-4 h-4"></i>
+                          Повний натальний/кар’єрний розбір
+                      </li>
+                      <li class="flex items-center text-green-400">
+                          <i data-feather="check" class="mr-2 w-4 h-4"></i>
+                          2 консультації на місяць по 1 годині
+                      </li>
+                      <li class="flex items-center text-green-400">
+                          <i data-feather="check" class="mr-2 w-4 h-4"></i>
+                          Індивідуальний план розвитку + матеріали
+                      </li>
+                  </ul>
+                  <button class="w-full bg-gradient-to-r from-violet-600 to-amber-600 hover:from-violet-700 hover:to-amber-700 text-white py-2 px-4 rounded-lg font-medium">
+                      Обрати тариф
+                  </button>
+              </div>
+          </div>
+      </section>
 
-        <div id="testimonials-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <!-- Testimonial 1 -->
-            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
-                <div class="flex items-center mb-4">
-                    <img src="http://static.photos/people/200x200/1" alt="Client" class="w-12 h-12 rounded-full mr-4">
-                    <div>
-                        <h4 class="font-bold">Марія К.</h4>
-                        <div class="flex">
-                            <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                            <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                            <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                            <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                            <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        </div>
-                    </div>
-                </div>
-                <p class="text-gray-300">"Консультація з Ольгою відкрила мені очі на багато речей. Тепер я краще розумію себе та свої стосунки з близькими."</p>
-            </div>
+      <!-- Testimonials Section -->
+  <section id="testimonials" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div class="text-center mb-16">
+              <h2 class="text-3xl md:text-4xl font-bold mb-4">Відгуки клієнтів</h2>
+              <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
+          </div>
 
-            <!-- Testimonial 2 -->
-            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
-                <div class="flex items-center mb-4">
-                    <img src="http://static.photos/people/200x200/2" alt="Client" class="w-12 h-12 rounded-full mr-4">
-                    <div>
-                        <h4 class="font-bold">Олексій П.</h4>
-                        <div class="flex">
-                            <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                            <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                            <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                            <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                            <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        </div>
-                    </div>
-                </div>
-                <p class="text-gray-300">"Дуже точний аналіз моєї бізнес-ситуації. Ольга допомогла прийняти правильне рішення у складний момент."</p>
-            </div>
+          <div id="testimonials-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+              <!-- Testimonial 1 -->
+              <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                  <div class="flex items-center mb-4">
+                      <img src="http://static.photos/people/200x200/1" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                      <div>
+                          <h4 class="font-bold">Марія К.</h4>
+                          <div class="flex">
+                              <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                              <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                              <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                              <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                              <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                          </div>
+                      </div>
+                  </div>
+                  <p class="text-gray-300">"Консультація з Ольгою відкрила мені очі на багато речей. Тепер я краще розумію себе та свої стосунки з близькими."</p>
+              </div>
 
-            <!-- Testimonial 3 -->
-            <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
-                <div class="flex items-center mb-4">
-                    <img src="http://static.photos/people/200x200/3" alt="Client" class="w-12 h-12 rounded-full mr-4">
-                    <div>
-                        <h4 class="font-bold">Анна Л.</h4>
-                        <div class="flex">
-                            <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                            <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                            <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                            <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                            <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
-                        </div>
-                    </div>
-                </div>
-                <p class="text-gray-300">"Синастрія з моїм чоловіком була дуже точною. Багато речей стали зрозумілішими після консультації."</p>
-            </div>
-        </div>
+              <!-- Testimonial 2 -->
+              <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                  <div class="flex items-center mb-4">
+                      <img src="http://static.photos/people/200x200/2" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                      <div>
+                          <h4 class="font-bold">Олексій П.</h4>
+                          <div class="flex">
+                              <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                              <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                              <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                              <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                              <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                          </div>
+                      </div>
+                  </div>
+                  <p class="text-gray-300">"Дуже точний аналіз моєї бізнес-ситуації. Ольга допомогла прийняти правильне рішення у складний момент."</p>
+              </div>
 
-        <!-- Feedback Form -->
-        <div class="bg-gray-800 rounded-xl p-8 max-w-3xl mx-auto">
-            <h3 class="text-2xl font-bold mb-6 text-center">Залишити відгук</h3>
-            <form class="space-y-4">
-                <div class="grid md:grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-1">Ваше ім'я</label>
-                        <input type="text" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-300 mb-1">Email</label>
-                        <input type="email" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500">
-                    </div>
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-300 mb-1">Ваш відгук</label>
-                    <textarea rows="4" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500"></textarea>
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-300 mb-2">Оцінка</label>
-                    <div id="rating-stars" class="flex justify-center space-x-2">
-                        <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer"></i>
-                        <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer"></i>
-                        <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer"></i>
-                        <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer"></i>
-                        <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer"></i>
-                    </div>
-                </div>
-                <button type="submit" class="w-full bg-violet-600 hover:bg-violet-700 text-white py-2 px-4 rounded-lg font-medium">
-                    Надіслати відгук
-                </button>
-            </form>
-        </div>
-    </section>
+              <!-- Testimonial 3 -->
+              <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
+                  <div class="flex items-center mb-4">
+                      <img src="http://static.photos/people/200x200/3" alt="Client" class="w-12 h-12 rounded-full mr-4">
+                      <div>
+                          <h4 class="font-bold">Анна Л.</h4>
+                          <div class="flex">
+                              <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                              <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                              <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                              <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                              <i data-feather="star" class="w-5 h-5 text-amber-400 fill-amber-400"></i>
+                          </div>
+                      </div>
+                  </div>
+                  <p class="text-gray-300">"Синастрія з моїм чоловіком була дуже точною. Багато речей стали зрозумілішими після консультації."</p>
+              </div>
+          </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0">
-                    <span class="text-2xl font-bold gradient-text">Ольга Джуманова</span>
-                    <p class="text-gray-400 mt-2">Астрологічні консультації та дослідження</p>
-                    <div class="flex space-x-4 mt-4">
-                        <a href="https://www.instagram.com/olgadzhumandzhi/" target="_blank" class="text-gray-400 hover:text-white">
-                            <i data-feather="instagram" class="w-5 h-5"></i>
-                        </a>
-                        <a href="https://www.facebook.com/ol.ga.konovalova.795283" target="_blank" class="text-gray-400 hover:text-white">
-                            <i data-feather="facebook" class="w-5 h-5"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="flex flex-col items-center md:items-end">
-                    <p class="text-sm text-gray-500">© 2023 Космічні Видіння Ольги Джуманової. Всі права захищені.</p>
-</div>
-            </div>
-        </div>
-    </footer>
+          <!-- Feedback Form -->
+          <div class="bg-gray-800 rounded-xl p-8 max-w-3xl mx-auto">
+              <h3 class="text-2xl font-bold mb-6 text-center">Залишити відгук</h3>
+              <form class="space-y-4">
+                  <div class="grid md:grid-cols-2 gap-4">
+                      <div>
+                          <label class="block text-sm font-medium text-gray-300 mb-1">Ваше ім'я</label>
+                          <input type="text" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500">
+                      </div>
+                      <div>
+                          <label class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                          <input type="email" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500">
+                      </div>
+                  </div>
+                  <div>
+                      <label class="block text-sm font-medium text-gray-300 mb-1">Ваш відгук</label>
+                      <textarea rows="4" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500"></textarea>
+                  </div>
+                  <div>
+                      <label class="block text-sm font-medium text-gray-300 mb-2">Оцінка</label>
+                      <div id="rating-stars" class="flex justify-center space-x-2">
+                          <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer"></i>
+                          <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer"></i>
+                          <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer"></i>
+                          <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer"></i>
+                          <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer"></i>
+                      </div>
+                  </div>
+                  <button type="submit" class="w-full bg-violet-600 hover:bg-violet-700 text-white py-2 px-4 rounded-lg font-medium">
+                      Надіслати відгук
+                  </button>
+              </form>
+          </div>
+      </section>
 
-    <!-- Consultation Modal -->
-    <div id="consultationModal" class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden flex items-center justify-center p-4">
-        <div class="bg-gray-800 rounded-xl p-8 max-w-md w-full relative">
-            <button onclick="hideConsultationForm()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
-                <i data-feather="x" class="w-6 h-6"></i>
-            </button>
-            <h3 class="text-2xl font-bold mb-6">Запис на консультацію</h3>
-            <form id="feedbackForm" class="space-y-4">
-                <div>
-                    <label class="block text-sm font-medium text-gray-300 mb-1">Ваше ім'я</label>
-                    <input type="text" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500">
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-300 mb-1">Email</label>
-                    <input type="email" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500">
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-300 mb-1">Послуга</label>
-                    <select class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500">
-                        <option>Натальна карта</option>
-                        <option>Синастрія</option>
-                        <option>Хорарна астрологія</option>
-                    </select>
-                </div>
-                <button type="submit" class="w-full bg-violet-600 hover:bg-violet-700 text-white py-2 px-4 rounded-lg font-medium">
-                    Надіслати
-                </button>
-            </form>
-        </div>
-    </div>
-    <script src="stars.js"></script>  
-</body>
+      <!-- Footer -->
+      <footer class="bg-gray-900 py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-800">
+          <div class="max-w-7xl mx-auto">
+              <div class="flex flex-col md:flex-row justify-between items-center">
+                  <div class="mb-6 md:mb-0">
+                      <span class="text-2xl font-bold gradient-text">Ольга Джуманова</span>
+                      <p class="text-gray-400 mt-2">Астрологічні консультації та дослідження</p>
+                      <div class="flex space-x-4 mt-4">
+                          <a href="https://www.instagram.com/olgadzhumandzhi/" target="_blank" class="text-gray-400 hover:text-white">
+                              <i data-feather="instagram" class="w-5 h-5"></i>
+                          </a>
+                          <a href="https://www.facebook.com/ol.ga.konovalova.795283" target="_blank" class="text-gray-400 hover:text-white">
+                              <i data-feather="facebook" class="w-5 h-5"></i>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="flex flex-col items-center md:items-end">
+                      <p class="text-sm text-gray-500">© 2023 Космічні Видіння Ольги Джуманової. Всі права захищені.</p>
+  </div>
+              </div>
+          </div>
+      </footer>
+
+      <!-- Consultation Modal -->
+      <div id="consultationModal" class="fixed inset-0 bg-black bg-opacity-70 z-50 hidden flex items-center justify-center p-4">
+          <div class="bg-gray-800 rounded-xl p-8 max-w-md w-full relative">
+              <button onclick="hideConsultationForm()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                  <i data-feather="x" class="w-6 h-6"></i>
+              </button>
+              <h3 class="text-2xl font-bold mb-6">Запис на консультацію</h3>
+              <form id="feedbackForm" class="space-y-4">
+                  <div>
+                      <label class="block text-sm font-medium text-gray-300 mb-1">Ваше ім'я</label>
+                      <input type="text" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500">
+                  </div>
+                  <div>
+                      <label class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+                      <input type="email" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500">
+                  </div>
+                  <div>
+                      <label class="block text-sm font-medium text-gray-300 mb-1">Послуга</label>
+                      <select class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500">
+                          <option>Натальна карта</option>
+                          <option>Синастрія</option>
+                          <option>Хорарна астрологія</option>
+                      </select>
+                  </div>
+                  <button type="submit" class="w-full bg-violet-600 hover:bg-violet-700 text-white py-2 px-4 rounded-lg font-medium">
+                      Надіслати
+                  </button>
+              </form>
+          </div>
+      </div>
+      <script src="stars.js"></script>  
+  </body>
 </html>
