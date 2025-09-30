@@ -350,7 +350,7 @@
             <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div id="testimonials-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <!-- Testimonial 1 -->
             <div class="bg-gray-800 rounded-xl p-6 border border-gray-700">
                 <div class="flex items-center mb-4">
@@ -471,7 +471,7 @@
                 <i data-feather="x" class="w-6 h-6"></i>
             </button>
             <h3 class="text-2xl font-bold mb-6">Запис на консультацію</h3>
-            <form class="space-y-4">
+            <form id="feedbackForm" class="space-y-4">
                 <div>
                     <label class="block text-sm font-medium text-gray-300 mb-1">Ваше ім'я</label>
                     <input type="text" class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-violet-500">
@@ -494,64 +494,6 @@
             </form>
         </div>
     </div>
-
-  <script>
-    // --- ОСНОВНІ ФУНКЦІЇ СТОРІНКИ ---
-
-    function showConsultationForm() {
-        document.getElementById('consultationModal').classList.remove('hidden');
-        feather.replace(); // Оновлюємо іконки в модальному вікні
-    }
-
-    function hideConsultationForm() {
-        document.getElementById('consultationModal').classList.add('hidden');
-    }
-
-    // Mobile menu toggle
-    document.getElementById('mobile-menu-button').addEventListener('click', function() {
-        const menu = document.getElementById('mobile-menu');
-        if (menu.classList.contains('hidden')) {
-            menu.classList.remove('hidden');
-            feather.replace(); // Оновлюємо іконки в мобільному меню
-        } else {
-            menu.classList.add('hidden');
-        }
-    });
-
-// --- СИСТЕМА РЕЙТИНГУ (ПОВНІСТЮ ОНОВЛЕНА) ---
-
-    // Функція, яка зафарбовує зірки
-    function setRating(ratingValue) {
-        // Тепер ми шукаємо SVG-елементи, які створила бібліотека Feather
-        const starSvgs = document.querySelectorAll('#rating-stars svg');
-        
-        starSvgs.forEach((svg, index) => {
-            if (index < ratingValue) {
-                // Додаємо клас для зафарбовування
-                svg.classList.add('fill-amber-400');
-            } else {
-                // Видаляємо клас
-                svg.classList.remove('fill-amber-400');
-            }
-        });
-    }
-
-    // --- ЗАПУСК СКРИПТІВ ПІСЛЯ ЗАВАНТАЖЕННЯ СТОРІНКИ ---
-
-    // Спочатку замінюємо всі іконки на сторінці
-    feather.replace();
-
-    // Потім, коли іконки вже стали SVG, знаходимо наші зірки для рейтингу
-    const clickableStars = document.querySelectorAll('#rating-stars svg');
-    
-    // Додаємо обробник кліку до кожної зірки
-    clickableStars.forEach((star, index) => {
-        star.addEventListener('click', () => {
-            // При кліку на зірку (наприклад, третю, index=2) викликаємо setRating(3)
-            setRating(index + 1);
-        });
-    });
-
-</script>
+    <script src="stars.js"></script>  
 </body>
 </html>
