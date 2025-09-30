@@ -46,7 +46,7 @@
             white-space: nowrap;
         }
     </style>
-  </head>
+</head>
 <body class="astro-pattern">
     <!-- Navigation -->
     <nav class="bg-gray-900 bg-opacity-80 backdrop-blur-md fixed w-full z-50 border-b border-violet-900">
@@ -72,9 +72,9 @@
 </div>
                 </div>
                 <div>
-                                    <button onclick="showConsultationForm()" class="bg-gradient-to-r from-violet-600 to-amber-600 hover:from-violet-700 hover:to-amber-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center shadow-lg hover:shadow-violet-700/50 transition-all">
-                    <i data-feather="calendar" class="mr-2 w-5 h-5"></i> Записатись
-                </button>
+                    <button onclick="showConsultationForm()" class="hidden md:block bg-gradient-to-r from-violet-600 to-amber-600 hover:from-violet-700 hover:to-amber-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center shadow-lg hover:shadow-violet-700/50 transition-all">
+                      Записатись
+                    </button>
 <button type="button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none" aria-controls="mobile-menu" aria-expanded="false" id="mobile-menu-button">
                         <span class="sr-only">Open main menu</span>
                         <i data-feather="menu" class="block h-6 w-6"></i>
@@ -95,30 +95,36 @@
                 <button onclick="showConsultationForm()" class="bg-gradient-to-r from-violet-600 to-amber-600 hover:from-violet-700 hover:to-amber-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center shadow-lg hover:shadow-violet-700/50 transition-all">
                     <i data-feather="calendar" class="mr-2 w-5 h-5"></i> Записатись
                 </button>
-</div>
+              </div>
         </div>
     </nav>
 
     <!-- Rest of your existing HTML content remains exactly the same -->
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">
-                <span class="gradient-text">Астрологічні</span> консультації
-            </h1>
-            <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-                Відкрийте таємниці вашого життя через натальну карту, синастрію та хорарну астрологію. Досліджуйте свої можливості та виклики з професійним астрологом.
-            </p>
-            <div class="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#services" class="bg-violet-600 hover:bg-violet-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center">
-                    <i data-feather="star" class="mr-2 w-5 h-5"></i> Мої послуги
-                </a>
-                <button onclick="showConsultationForm()" class="bg-gradient-to-r from-violet-600 to-amber-600 hover:from-violet-700 hover:to-amber-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center shadow-lg hover:shadow-violet-700/50 transition-all">
-                    <i data-feather="calendar" class="mr-2 w-5 h-5"></i> Записатись
-                </button>
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2 text-center lg:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    <span class="gradient-text">Астрологічні</span> консультації
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl">
+                    Відкрийте таємниці вашого життя через натальну карту, синастрію та хорарну астрологію. Досліджуйте свої можливості та виклики з професійним астрологом.
+                </p>
+                <div class="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                    <a href="#services" class="bg-violet-600 hover:bg-violet-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center">
+                        <i data-feather="star" class="mr-2 w-5 h-5"></i> Мої послуги
+                    </a>
+                    <button onclick="showConsultationForm()" class="bg-gradient-to-r from-violet-600 to-amber-600 hover:from-violet-700 hover:to-amber-700 text-white px-6 py-3 rounded-lg font-medium flex items-center justify-center shadow-lg hover:shadow-violet-700/50 transition-all">
+                        <i data-feather="calendar" class="mr-2 w-5 h-5"></i> Записатись
+                    </button>
+                </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-center">
+                <img src="https://huggingface.co/spaces/petrovskajulya/stellar-whisperer-s-cosmic-insights/resolve/main/images/мама.jpg" alt="Ольга Джуманова" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-violet-500 shadow-lg">
 </div>
+        </div>
     </section>
-
-    <!-- Services Section -->
+<!-- Services Section -->
     <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">Астрологічні послуги</h2>
