@@ -426,12 +426,12 @@
                 </div>
                 <div>
                     <label class="block text-sm font-medium text-gray-300 mb-2">Оцінка</label>
-                    <div class="flex justify-center space-x-2">
-                        <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer" onclick="rate(1)"></i>
-                        <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer" onclick="rate(2)"></i>
-                        <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer" onclick="rate(3)"></i>
-                        <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer" onclick="rate(4)"></i>
-                        <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer" onclick="rate(5)"></i>
+                    <div id="rating-stars" class="flex justify-center space-x-2">
+                        <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer"></i>
+                        <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer"></i>
+                        <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer"></i>
+                        <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer"></i>
+                        <i data-feather="star" class="w-8 h-8 text-amber-400 hover:fill-amber-400 cursor-pointer"></i>
                     </div>
                 </div>
                 <button type="submit" class="w-full bg-violet-600 hover:bg-violet-700 text-white py-2 px-4 rounded-lg font-medium">
@@ -495,41 +495,63 @@
         </div>
     </div>
 
-    <script>
-        // Rating system
-        function rate(stars) {
-            const starIcons = document.querySelectorAll('[data-feather="star"]');
-            starIcons.forEach((star, index) => {
-                if (index < stars) {
-                    star.classList.add('fill-amber-400');
-                } else {
-                    star.classList.remove('fill-amber-400');
-                }
-            });
-        }
+  <script>
+    // --- ОСНОВНІ ФУНКЦІЇ СТОРІНКИ ---
 
-        function showConsultationForm() {
-            document.getElementById('consultationModal').classList.remove('hidden');
-            feather.replace();
-        }
+    function showConsultationForm() {
+        document.getElementById('consultationModal').classList.remove('hidden');
+        feather.replace(); // Оновлюємо іконки в модальному вікні
+    }
 
-        function hideConsultationForm() {
-            document.getElementById('consultationModal').classList.add('hidden');
-        }
+    function hideConsultationForm() {
+        document.getElementById('consultationModal').classList.add('hidden');
+    }
 
-        // Mobile menu toggle
-        document.getElementById('mobile-menu-button').addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            if (menu.classList.contains('hidden')) {
-                menu.classList.remove('hidden');
-                feather.replace();
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-button').addEventListener('click', function() {
+        const menu = document.getElementById('mobile-menu');
+        if (menu.classList.contains('hidden')) {
+            menu.classList.remove('hidden');
+            feather.replace(); // Оновлюємо іконки в мобільному меню
+        } else {
+            menu.classList.add('hidden');
+        }
+    });
+
+// --- СИСТЕМА РЕЙТИНГУ (ПОВНІСТЮ ОНОВЛЕНА) ---
+
+    // Функція, яка зафарбовує зірки
+    function setRating(ratingValue) {
+        // Тепер ми шукаємо SVG-елементи, які створила бібліотека Feather
+        const starSvgs = document.querySelectorAll('#rating-stars svg');
+        
+        starSvgs.forEach((svg, index) => {
+            if (index < ratingValue) {
+                // Додаємо клас для зафарбовування
+                svg.classList.add('fill-amber-400');
             } else {
-                menu.classList.add('hidden');
+                // Видаляємо клас
+                svg.classList.remove('fill-amber-400');
             }
         });
+    }
 
-        // Replace icons
-        feather.replace();
-    </script>
+    // --- ЗАПУСК СКРИПТІВ ПІСЛЯ ЗАВАНТАЖЕННЯ СТОРІНКИ ---
+
+    // Спочатку замінюємо всі іконки на сторінці
+    feather.replace();
+
+    // Потім, коли іконки вже стали SVG, знаходимо наші зірки для рейтингу
+    const clickableStars = document.querySelectorAll('#rating-stars svg');
+    
+    // Додаємо обробник кліку до кожної зірки
+    clickableStars.forEach((star, index) => {
+        star.addEventListener('click', () => {
+            // При кліку на зірку (наприклад, третю, index=2) викликаємо setRating(3)
+            setRating(index + 1);
+        });
+    });
+
+</script>
 </body>
 </html>
